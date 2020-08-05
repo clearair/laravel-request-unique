@@ -1,0 +1,41 @@
+{
+    "name": "clearAir/laravel-request-unique",
+    "description": "laravel middleware request api unique",
+    "license": "MIT",
+    "keywords":
+    [
+        "laravel",
+        "laravel-request-middleware",
+        "request-id"
+    ],
+    "authors": [
+        {
+            "name": "clear",
+            "email": "quzhi552@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ClearAir\\LaravelRequestUnique\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\" : "Tests"
+        }
+    },
+    "require": {
+        "php": ">=7.2.*",
+        "laravel/framework": "^7.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ClearAir\\LaravelRequestUnique\\Providers\\LaravelRequestUniqueProvider"
+            ]
+        }
+    }
+}
